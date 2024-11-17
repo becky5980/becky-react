@@ -1,0 +1,39 @@
+{
+  "name": "becky-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server/index.js",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "Becky",
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "4.3.1",
+    "express": "^4.21.1",
+    "husky": "^9.1.6",
+    "less": "^4.2.0",
+    "prettier": "^3.3.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.26.2",
+    "styled-components": "6.1.13",
+    "vite": "5.4.7",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "@types/less": "^3.0.6"
+  }
+}
